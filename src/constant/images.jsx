@@ -1,0 +1,15 @@
+export default {
+    carousel1: require("../assets/images/carousel1.jpg"),
+    carousel2: require("../assets/images/carousel2.jpg"),
+    carousel3: require("../assets/images/carousel3.webp"),
+    banner1: require("../assets/images/banner-02.jpg"),
+    banner2: require("../assets/images/banner-07.jpg"),
+    banner3: require("../assets/images/shop-item-09.jpg"),
+    item1: require("../assets/images/item-cart-01.jpg"),
+    item2: require("../assets/images/item-cart-02.jpg"),
+    item3: require("../assets/images/item-cart-03.jpg"),
+    item4: require("../assets/images/item-05.jpg"),
+    item5: require("../assets/images/item-02.jpg"),
+    item6: require("../assets/images/item-03.jpg"),
+    item7: require("../assets/images/item-07.jpg"),
+}
