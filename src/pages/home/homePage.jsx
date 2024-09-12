@@ -51,16 +51,70 @@ export const HomePage = () => {
       </Swiper>
       <div className="flex justify-center gap-6 bg-white p-16">
         <div>
-          <img className="pb-5 w-96" src={Images.banner1} alt="" />
-          <img className="w-96" src={Images.item3} alt="" />
+          <div className="relative overflow-hidden mb-5">
+            <img
+              className=" duration-300 w-96 hover:scale-110"
+              src={Images.banner1}
+              alt=""
+            />
+            <button className=" tracking-widest py-2 px-12 absolute bottom-5 left-2/4 translate-x-[-50%] bg-white text-black">
+              Dresses
+            </button>
+          </div>
+          <div className="relative overflow-hidden mb-5">
+            <img
+              className=" duration-300 w-96 hover:scale-110"
+              src={Images.item3}
+              alt=""
+            />
+            <button className=" tracking-widest py-2 px-12 absolute bottom-5 left-2/4 translate-x-[-50%] bg-white text-black">
+              watches
+            </button>
+          </div>
         </div>
         <div>
-          <img className="w-96" src={Images.item3} alt="" />
-          <img className="pt-5 w-96" src={Images.banner2} alt="" />
+          <div className="relative overflow-hidden mb-5">
+            <img
+              className=" duration-300 w-96 hover:scale-110"
+              src={Images.item3}
+              alt=""
+            />
+            <button className=" tracking-widest py-2 px-12 absolute bottom-5 left-2/4 translate-x-[-50%] bg-white text-black">
+              Watches
+            </button>
+          </div>
+          <div className="relative overflow-hidden mb-5">
+            <img
+              className=" duration-300 w-96 hover:scale-110"
+              src={Images.banner2}
+              alt=""
+            />
+            <button className=" tracking-widest py-2 px-12 absolute bottom-5 left-2/4 translate-x-[-50%] bg-white text-black">
+              Footerwear
+            </button>
+          </div>
         </div>
         <div>
-          <img className="pb-5 w-96" src={Images.banner1} alt="" />
-          <img className="w-96" src={Images.item2} alt="" />
+        <div className="relative overflow-hidden mb-5">
+            <img
+              className=" duration-300 w-96 hover:scale-110"
+              src={Images.banner1}
+              alt=""
+            />
+            <button className=" tracking-widest py-2 px-12 absolute bottom-5 left-2/4 translate-x-[-50%] bg-white text-black">
+              Dresses
+            </button>
+          </div>
+          <div className="relative overflow-hidden mb-5">
+            <img
+              className=" duration-300 w-96 hover:scale-110"
+              src={Images.item2}
+              alt=""
+            />
+            <button className=" tracking-widest py-2 px-12 absolute bottom-5 left-2/4 translate-x-[-50%] bg-white text-black">
+              Shoes
+            </button>
+          </div>
         </div>
       </div>
     </div>
