@@ -34,15 +34,15 @@ export const NavBar = () => {
           About
         </li>
         <li
-          onClick={() => navigate("/account")}
+          onClick={() => navigate("/contact")}
           className="hover:text-red-500 cursor-pointer"
         >
-          Account
+          Contact
         </li>
       </ul>
       <div className="flex ps-6 items-center gap-6">
         <span className="text-3xl cursor-pointer">
-          <PiUserCircleLight />
+          <PiUserCircleLight onClick={() => navigate("/account")}/>
         </span>
         <span className="text-3xl cursor-pointer">
           <HiOutlineShoppingBag />

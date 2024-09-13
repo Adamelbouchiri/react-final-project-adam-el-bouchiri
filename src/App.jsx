@@ -6,6 +6,7 @@ import { Blog } from "./pages/blog/blog";
 import { About } from "./pages/about/about";
 import "./index.css";
 import "swiper/css";
+import { Account } from "./pages/account/account";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/about" element={<About />} />
+        <Route path="/account" element={<Account />} />
       </Routes>
       <Footer/>
     </>
