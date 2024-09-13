@@ -1,19 +1,32 @@
 import React from "react";
-import logo from "../assets/images/logo.png"
+import logo from "../assets/images/logo.png";
 
 import { PiUserCircleLight } from "react-icons/pi";
 import { HiOutlineShoppingBag } from "react-icons/hi2";
+import { useNavigate } from "react-router-dom";
 
 export const NavBar = () => {
+  let navigate = useNavigate();
+
   return (
     <div className="flex items-center p-6 justify-between bg-white sticky top-0 z-50 shadow">
       <img src={logo} alt="" />
       <ul className="flex justify-center gap-9 items-center">
-        <li className="hover:text-red-500 cursor-pointer">Home</li>
+        <li
+          onClick={() => navigate("/")}
+          className="hover:text-red-500 cursor-pointer"
+        >
+          Home
+        </li>
         <li className="hover:text-red-500 cursor-pointer">Shop</li>
         <li className="hover:text-red-500 cursor-pointer">sales</li>
         <li className="hover:text-red-500 cursor-pointer">Features</li>
-        <li className="hover:text-red-500 cursor-pointer">Blog</li>
+        <li
+          onClick={() => navigate("/blog")}
+          className="hover:text-red-500 cursor-pointer"
+        >
+          Blog
+        </li>
         <li className="hover:text-red-500 cursor-pointer">About</li>
         <li className="hover:text-red-500 cursor-pointer">Account</li>
       </ul>

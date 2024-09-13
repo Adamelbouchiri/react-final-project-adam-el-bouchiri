@@ -1,3 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.blog {
+  background-image: url("./assets/images/banner.webp");
+}
+
+.blog2 {
+  background-image: url("./assets/images/blog-01.jpg");
+}
+
+.blog3 {
+  background-image: url("./assets/images/blog-02.jpg");
+}
+
+.gl1 {
+  background-image: url("./assets/images/gallery-07.jpg");
+}
+.gl2 {
+  background-image: url("./assets/images/banner-07.jpg");
+}
+.gl3 {
+  background-image: url("./assets/images/banner-02.jpg");
+}
+.gl4 {
+  background-image: url("./assets/images/item-03.jpg");
+}
+.gl5 {
+  background-image: url("./assets/images/item-cart-01.jpg");
+}
