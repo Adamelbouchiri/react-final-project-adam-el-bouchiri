@@ -11,6 +11,8 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 export const HomePage = () => {
+  let imgArr = [Images.item2, Images.item3, Images.banner3];
+
   return (
     <div>
       <Swiper
@@ -220,7 +222,11 @@ export const HomePage = () => {
                 </span>
               </div>
               <div>
-                <img className="w-[700px] pb-4" src={Images.carouselImg7} alt="" />
+                <img
+                  className="w-[700px] pb-4"
+                  src={Images.carouselImg7}
+                  alt=""
+                />
                 <p className="cursor-pointer duration-300 hover:text-red-500">
                   Boxy4 T-Shirt with Roll Sleeve{" "}
                 </p>
@@ -231,6 +237,114 @@ export const HomePage = () => {
             </div>
           </SwiperSlide>
         </Swiper>
+      </div>
+
+      <div className="p-14 flex justify-center gap-5 bg-[#f2f2f2]">
+        <div className="relative overflow-hidden">
+          <img
+            className="w-[600px] duration-300 hover:scale-110"
+            src={Images.banner4}
+            alt=""
+          />
+          <div className="text-center absolute top-2/4 left-2/4 translate-x-[-50%] translate-y-[-50%]">
+            <span className="text-3xl text-white font-bold tracking-widest">
+              The Beauty
+            </span>
+            <h1 className="text-5xl text-white font-bold tracking-widest">
+              Lookbook
+            </h1>
+          </div>
+        </div>
+        <div className="w-[600px] bg-white flex justify-center items-center flex-col">
+          <img
+            className="w-[350px]"
+            src={imgArr[Math.floor(Math.random() * 3)]}
+            alt=""
+          />
+          <p className="text-center pt-4">
+            Boxy2 T-Shirt with Roll Sleeve <br />
+            $20.00
+          </p>
+        </div>
+      </div>
+
+      <h1 className="text-4xl font-bold text-center pb-5 pt-10">Our Blog</h1>
+
+      <div className="flex justify-center gap-7 py-16">
+        <div className="w-[400px]">
+          <div className="overflow-hidden">
+            <img
+              className="w-full duration-300 hover:scale-110"
+              src={Images.blog1}
+              alt=""
+            />
+          </div>
+          <p className="text-xl font-bold py-3">
+            Black Friday Guide: Best Sales & Discount Codes
+          </p>
+          <span className="text-gray-400">
+            by fashe-theme Admin on Dec 28,2017
+          </span>
+          <p className="w-full pt-3 leading-6">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed
+            turpis sed lorem dignissim vulputate nec cursus ante. Nunc sit...
+          </p>
+        </div>
+        <div className="w-[400px]">
+          <div className="overflow-hidden">
+            <img
+              className="w-full duration-300 hover:scale-110"
+              src={Images.blog2}
+              alt=""
+            />
+          </div>
+          <p className="text-xl font-bold py-3">
+            Black Friday Guide: Best Sales & Discount Codes
+          </p>
+          <span className="text-gray-400">
+            by fashe-theme Admin on Dec 28,2017
+          </span>
+          <p className="w-full pt-3 leading-6">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed
+            turpis sed lorem dignissim vulputate nec cursus ante. Nunc sit...
+          </p>
+        </div>
+        <div className="w-[400px]">
+          <div className="overflow-hidden">
+            <img
+              className="w-full duration-300 hover:scale-110"
+              src={Images.blog3}
+              alt=""
+            />
+          </div>
+          <p className="text-xl font-bold py-3">
+            Black Friday Guide: Best Sales & Discount Codes
+          </p>
+          <span className="text-gray-400">
+            by fashe-theme Admin on Dec 28,2017
+          </span>
+          <p className="w-full pt-3 leading-6">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed
+            turpis sed lorem dignissim vulputate nec cursus ante. Nunc sit...
+          </p>
+        </div>
+      </div>
+
+      <h1 className="text-4xl font-bold text-center pb-14 pt-10">@ FOLLOW US ON INSTAGRAM</h1>
+
+      <div className="flex justify-around px-14 py-8 gap-10">
+        <div className="border-l-gray-300 border-e-2 border-solid pe-14 pt-4 text-center">
+          <h1 className="text-xl text-gray-400 pb-3">Free Delivery Worldwide</h1>
+          <p className="tracking-wider">Mirum est notare quam littera gothica</p>
+        </div>
+        <div className="border-l-gray-300 border-e-2 border-solid pe-14 pt-4 text-center">
+          <h1 className="text-xl text-gray-400 pb-3">30 Days Return</h1>
+          <p className="tracking-wider">Simply return it within 30 days for an exchange.</p>
+        </div>
+        <div className="text-center">
+          <h1 className="text-xl text-gray-400 pb-3">Store Opening</h1>
+          <p className="tracking-wider">Shop open from Monday to Sunday</p>
+        </div>
       </div>
     </div>
   );
