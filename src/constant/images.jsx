@@ -12,4 +12,11 @@ export default {
     item5: require("../assets/images/item-02.jpg"),
     item6: require("../assets/images/item-03.jpg"),
     item7: require("../assets/images/item-07.jpg"),
+    carouselImg1: require("../assets/images/2ndCarouselImg.webp"),
+    carouselImg2: require("../assets/images/2ndCarouselImg2.webp"),
+    carouselImg3: require("../assets/images/2ndCarouselImg3.webp"),
+    carouselImg4: require("../assets/images/2ndCarouselImg4.webp"),
+    carouselImg5: require("../assets/images/2ndCarouselImg5.webp"),
+    carouselImg6: require("../assets/images/2ndCarouselImg6.webp"),
+    carouselImg7: require("../assets/images/2ndCarouselImg7.webp"),
 }

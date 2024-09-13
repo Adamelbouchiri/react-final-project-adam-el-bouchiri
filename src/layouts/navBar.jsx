@@ -6,7 +6,7 @@ import { HiOutlineShoppingBag } from "react-icons/hi2";
 
 export const NavBar = () => {
   return (
-    <div className="flex items-center p-6 justify-between bg-white sticky">
+    <div className="flex items-center p-6 justify-between bg-white sticky top-0 z-50 shadow">
       <img src={logo} alt="" />
       <ul className="flex justify-center gap-9 items-center">
         <li className="hover:text-red-500 cursor-pointer">Home</li>

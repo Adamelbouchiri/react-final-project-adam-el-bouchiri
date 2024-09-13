@@ -95,7 +95,7 @@ export const HomePage = () => {
           </div>
         </div>
         <div>
-        <div className="relative overflow-hidden mb-5">
+          <div className="relative overflow-hidden mb-5">
             <img
               className=" duration-300 w-96 hover:scale-110"
               src={Images.banner1}
@@ -116,6 +116,121 @@ export const HomePage = () => {
             </button>
           </div>
         </div>
+      </div>
+      <h1 className="text-4xl font-bold text-center py-5">FEATURED PRODUCTS</h1>
+      <div className="py-5">
+        <Swiper
+          spaceBetween={0}
+          navigation={true}
+          loop={true}
+          modules={[Navigation, Pagination]}
+          className="mySwiper"
+        >
+          <SwiperSlide>
+            <div className="flex gap-7 px-32">
+              <div className="">
+                <img
+                  className="relative duration-300 before:absolute before:content-[''] before:top-0 before:left-0 before:w-0 before:h-0 hover:before:w-full hover:before:h-full  hover:before:bg-black/30 w-[700px] pb-4"
+                  src={Images.carouselImg2}
+                  alt=""
+                />
+                <p className="cursor-pointer duration-300 hover:text-red-500">
+                  Boxy4 T-Shirt with Roll Sleeve{" "}
+                </p>
+                <span className="cursor-pointer duration-300 hover:text-red-500">
+                  $20.00
+                </span>
+              </div>
+              <div>
+                <img
+                  className="w-[700px] pb-4"
+                  src={Images.carouselImg3}
+                  alt=""
+                />
+                <p className="cursor-pointer duration-300 hover:text-red-500">
+                  Boxy4 T-Shirt with Roll Sleeve{" "}
+                </p>
+                <span className="cursor-pointer duration-300 hover:text-red-500">
+                  $20.00
+                </span>
+              </div>
+              <div>
+                <img
+                  className="w-[700px] pb-4"
+                  src={Images.carouselImg1}
+                  alt=""
+                />
+                <p className="cursor-pointer duration-300 hover:text-red-500">
+                  Boxy4 T-Shirt with Roll Sleeve{" "}
+                </p>
+                <span className="cursor-pointer duration-300 hover:text-red-500">
+                  $20.00
+                </span>
+              </div>
+              <div>
+                <img className="w-[700px] pb-4" src={Images.item6} alt="" />
+                <p className="cursor-pointer duration-300 hover:text-red-500">
+                  Boxy4 T-Shirt with Roll Sleeve{" "}
+                </p>
+                <span className="cursor-pointer duration-300 hover:text-red-500">
+                  $20.00
+                </span>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="flex gap-7 px-32">
+              <div className="">
+                <img
+                  className="w-[700px] pb-4"
+                  src={Images.carouselImg4}
+                  alt=""
+                />
+                <p className="cursor-pointer duration-300 hover:text-red-500">
+                  Boxy4 T-Shirt with Roll Sleeve{" "}
+                </p>
+                <span className="cursor-pointer duration-300 hover:text-red-500">
+                  $20.00
+                </span>
+              </div>
+              <div>
+                <img
+                  className="w-[700px] pb-4"
+                  src={Images.carouselImg5}
+                  alt=""
+                />
+                <p className="cursor-pointer duration-300 hover:text-red-500">
+                  Boxy4 T-Shirt with Roll Sleeve{" "}
+                </p>
+                <span className="cursor-pointer duration-300 hover:text-red-500">
+                  $20.00
+                </span>
+              </div>
+              <div>
+                <img
+                  className="w-[700px] pb-4"
+                  src={Images.carouselImg6}
+                  alt=""
+                />
+                <p className="cursor-pointer duration-300 hover:text-red-500">
+                  Boxy4 T-Shirt with Roll Sleeve{" "}
+                </p>
+                <span className="cursor-pointer duration-300 hover:text-red-500">
+                  $20.00
+                </span>
+              </div>
+              <div>
+                <img className="w-[700px] pb-4" src={Images.carouselImg7} alt="" />
+                <p className="cursor-pointer duration-300 hover:text-red-500">
+                  Boxy4 T-Shirt with Roll Sleeve{" "}
+                </p>
+                <span className="cursor-pointer duration-300 hover:text-red-500">
+                  $20.00
+                </span>
+              </div>
+            </div>
+          </SwiperSlide>
+        </Swiper>
       </div>
     </div>
   );
