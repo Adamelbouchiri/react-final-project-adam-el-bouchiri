@@ -27,8 +27,18 @@ export const NavBar = () => {
         >
           Blog
         </li>
-        <li className="hover:text-red-500 cursor-pointer">About</li>
-        <li className="hover:text-red-500 cursor-pointer">Account</li>
+        <li
+          onClick={() => navigate("/about")}
+          className="hover:text-red-500 cursor-pointer"
+        >
+          About
+        </li>
+        <li
+          onClick={() => navigate("/account")}
+          className="hover:text-red-500 cursor-pointer"
+        >
+          Account
+        </li>
       </ul>
       <div className="flex ps-6 items-center gap-6">
         <span className="text-3xl cursor-pointer">
