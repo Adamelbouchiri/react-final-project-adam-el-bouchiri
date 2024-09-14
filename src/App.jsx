@@ -9,6 +9,7 @@ import { SignUp } from "./pages/account/signup/signUp";
 import { createContext, useState } from "react";
 import "./index.css";
 import "swiper/css";
+import { Contact } from "./pages/contact/contact";
 
 export const objContext = createContext(null);
 
@@ -30,6 +31,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/account" element={<Account />} />
           <Route path="/signUp" element={<SignUp />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
         <Footer />
       </objContext.Provider>
