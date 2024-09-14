@@ -7,9 +7,10 @@ import { About } from "./pages/about/about";
 import { Account } from "./pages/account/account";
 import { SignUp } from "./pages/account/signup/signUp";
 import { createContext, useState } from "react";
+import { Contact } from "./pages/contact/contact";
+import { Shop } from "./pages/shop/shop";
 import "./index.css";
 import "swiper/css";
-import { Contact } from "./pages/contact/contact";
 
 export const objContext = createContext(null);
 
@@ -27,6 +28,7 @@ function App() {
         <NavBar />
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/shop" element={<Shop />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/about" element={<About />} />
           <Route path="/account" element={<Account />} />

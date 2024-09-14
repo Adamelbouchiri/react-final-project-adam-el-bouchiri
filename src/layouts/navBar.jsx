@@ -18,7 +18,7 @@ export const NavBar = () => {
         >
           Home
         </li>
-        <li className="hover:text-red-500 cursor-pointer">Shop</li>
+        <li onClick={() => navigate("/shop")} className="hover:text-red-500 cursor-pointer">Shop</li>
         <li className="hover:text-red-500 cursor-pointer">sales</li>
         <li className="hover:text-red-500 cursor-pointer">Features</li>
         <li
