@@ -1,3 +1,3 @@
-import data from "../json/data.json";
+import products from "../json/data.json";
 
-export { data };
+export { products };
